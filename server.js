@@ -1,11 +1,7 @@
 const express = require('express');
-// const bodyParser = require('body-parser');
-// const fs = require('fs');
 
 const app = express();
-// let stringifyFile;
 
-// app.use(bodyParser.json());
 app.use(express.static('assets'));
 app.get('/', function(req, res) {
     res.sendFile('/index.html');
