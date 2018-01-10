@@ -16,7 +16,8 @@ h1 {
     padding-top: 30px;
     text-align: center;
 }
-form {
+
+.login {
     display: flex;
     justify-content: center;
     align-items: center;

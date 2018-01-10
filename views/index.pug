@@ -1,0 +1,14 @@
+doctype html
+html
+    head
+        title="Login Google"
+        style 
+            include ./style.css
+    body
+        include ./header.pug
+        div.login
+            span Login
+            input
+            span Password
+            input(type='password')
+            a.loginButton(href='/auth/google') Log in!
