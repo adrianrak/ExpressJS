@@ -1,0 +1,17 @@
+doctype html
+html
+    head
+        title="Login Google"
+        style 
+            include ./first-template.css
+    body
+        include ./header.pug
+        form(action='http://localhost:3000/second-template', method='GET')
+            h2 Sign In
+            p
+                | First Name: 
+                input(type='text', name='first_name')
+            p
+                | Last Name: 
+                input(type='text', name='last_name')
+            input(type='submit', value='Submit')
