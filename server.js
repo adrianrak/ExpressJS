@@ -42,7 +42,6 @@ app.get('/logged', function(req, res){
 });
 
 //Passport routes
-
 app.get('/auth/google',
 passport.authenticate('google', {
 scope : ['profile', 'email']
