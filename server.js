@@ -3,7 +3,12 @@ const express = require('express');
 const app = express();
 
 app.use('/store', function(req, res, next){
-    console.log('Jestem pośrednikiem przy żądaniu do /store.');
+    console.log('Autoryzacja użytkownika...');
+    next();
+});
+
+app.use('/store', function(req, res, next){
+    console.log('Sprawdzanie uprawnień.');
     next();
 });
 
