@@ -23,12 +23,7 @@ app.get('/first-template', function(req, res){
 });
 
 app.get('/second-template', function (req, res) {
-    res.render('second-template');
-    // const response = {
-    //     first_name: req.query.first_name,
-    //     last_name: req.query.last_name
-    // };
-    // res.end(JSON.stringify(response));
+    res.render('second-template', { name: req.query.first_name });
 });
 
 
